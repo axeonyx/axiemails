@@ -22,8 +22,8 @@ const Header = () => {
           <a href="#email-designs" className="nav-link">Our Designs</a>
           <a href="#why-us" className="nav-link">Why Us</a>
           <a href="#results" className="nav-link">Results</a>
-          <a href="#contact" className="button-primary">
-            Book a Call
+          <a href="https://calendly.com/anish-axiemails/30min" className="button-primary">
+            Get a Free Audit
           </a>
         </nav>
         
@@ -43,7 +43,7 @@ const Header = () => {
           <a href="#email-designs" className="block py-2 nav-link">Our Designs</a>
           <a href="#why-us" className="block py-2 nav-link">Why Us</a>
           <a href="#results" className="block py-2 nav-link">Results</a>
-          <a href="#contact" className="block py-2 button-primary text-center">Book a Call</a>
+
         </div>
       </div>
     </header>;

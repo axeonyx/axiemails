@@ -23,15 +23,15 @@ const Footer = () => {
           <div className="md:col-span-1">
             <h4 className="font-semibold mb-4">Connect</h4>
             <a 
-              href="mailto:hello@axiemails.com" 
+              href="mailto:anish@axiemails.com" 
               className="block text-accent hover:underline mb-4"
             >
-              hello@axiemails.com
+              anish@axiemails.com
             </a>
             
             <div className="flex space-x-4 mt-4">
               <a 
-                href="https://instagram.com" 
+                href="https://instagram.com/axiemails" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -44,7 +44,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://linkedin.com/in/axieanish" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"

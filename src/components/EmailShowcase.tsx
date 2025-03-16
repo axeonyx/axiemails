@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 
 // Email showcases - these would be replaced with actual email designs
@@ -9,11 +8,11 @@ const emailDesigns = [
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&h=3000&auto=format&fit=crop'
+    image: 'Design2.png'
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&h=3000&auto=format&fit=crop'
+    image: 'Design3.png'
   },
 ];
 
@@ -51,9 +50,9 @@ const EmailShowcase = () => {
     <section id="email-designs" ref={sectionRef} className="section bg-secondary">
       <div className="max-w-4xl mx-auto text-center">
         <div className="fade-in-element">
-          <h2 className="section-title text-center mx-auto mb-6">Email Designs that Convert</h2>
+          <h2 className="section-title text-center mx-auto mb-6">Discover Our Email Designs That Drive Results.</h2>
           <p className="section-description text-center mx-auto mb-14">
-            Hover over each design to explore our high-converting email templates
+            Hover over each design to scroll through our high-converting Email Designs.
           </p>
         </div>
       </div>
@@ -66,11 +65,11 @@ const EmailShowcase = () => {
             style={{ transitionDelay: `${index * 100}ms` }}
           >
             <div className="relative group">
-              <div className="email-preview h-[600px] md:h-[700px] overflow-hidden rounded-xl shadow-lg transform transition-transform duration-500 hover:scale-[1.02] hover:-translate-y-2">
+              <div className="email-preview h-[600px] md:h-[700px] overflow-hidden hover:overflow-y-auto rounded-xl shadow-lg transform transition-transform duration-1000 hover:scale-[1.02] hover:-translate-y-2">
                 <img 
                   src={email.image} 
                   alt="Email design example" 
-                  className="email-preview-content w-full h-auto object-cover transform scale-105"
+                  className="w-full min-h-full object-top rounded-xl"
                 />
               </div>
             </div>
