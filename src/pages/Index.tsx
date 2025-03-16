@@ -70,14 +70,21 @@ const Index = () => {
             </div>
           </div>
           
-          {/* Placeholder for custom image or Canva embed */}
+          {/* Canva embed */}
           <div 
-            className="fade-in-element rounded-xl overflow-hidden shadow-2xl mx-auto max-w-3xl bg-white border border-border perspective"
+            className="fade-in-element rounded-xl overflow-hidden shadow-2xl mx-auto max-w-3xl perspective"
             ref={addToObserver}
             style={{ transitionDelay: '200ms' }}
           >
-            <div className="w-full h-full min-h-[400px] flex items-center justify-center text-muted-foreground card-3d">
-              <p className="text-center px-8">Canva design or interactive element embed area</p>
+            <div className="w-full h-full relative aspect-video">
+              <iframe 
+                loading="lazy" 
+                style={{ position: 'absolute', width: '100%', height: '100%', top: 0, left: 0, border: 'none', padding: 0, margin: 0 }}
+                src="https://www.canva.com/design/DAGf2CaurqM/IsWH6s4b9qBMX9FJuJwM8w/view?embed" 
+                allowFullScreen={true}
+                allow="fullscreen"
+                className="card-3d"
+              ></iframe>
             </div>
           </div>
         </div>
