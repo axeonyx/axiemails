@@ -49,11 +49,13 @@ const EmailShowcase = () => {
 
   return (
     <section id="email-designs" ref={sectionRef} className="section bg-secondary">
-      <div className="fade-in-element text-center">
-        <h2 className="section-title text-center mb-6">Email Designs that Convert</h2>
-        <p className="section-description text-center mx-auto mb-14">
-          Hover over each design to explore our high-converting email templates
-        </p>
+      <div className="max-w-4xl mx-auto text-center">
+        <div className="fade-in-element">
+          <h2 className="section-title text-center mx-auto mb-6">Email Designs that Convert</h2>
+          <p className="section-description text-center mx-auto mb-14">
+            Hover over each design to explore our high-converting email templates
+          </p>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -64,7 +66,7 @@ const EmailShowcase = () => {
             style={{ transitionDelay: `${index * 100}ms` }}
           >
             <div className="relative group">
-              <div className="email-preview h-[600px] md:h-[700px] overflow-hidden rounded-xl shadow-lg">
+              <div className="email-preview h-[600px] md:h-[700px] overflow-hidden rounded-xl shadow-lg transform transition-transform duration-500 hover:scale-[1.02] hover:-translate-y-2">
                 <img 
                   src={email.image} 
                   alt="Email design example" 

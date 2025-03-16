@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +37,9 @@ const Header = () => {
         
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#services" className="nav-link">Services</a>
+          <a href="#email-designs" className="nav-link">Our Designs</a>
           <a href="#why-us" className="nav-link">Why Us</a>
+          <a href="#results" className="nav-link">Results</a>
           <a 
             href="#contact" 
             className="button-primary"
@@ -46,7 +49,11 @@ const Header = () => {
         </nav>
         
         {/* Mobile menu button */}
-        <button className="md:hidden p-2">
+        <button 
+          className="md:hidden p-2"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
           <span className="sr-only">Open menu</span>
           <svg
             width="24"
@@ -65,6 +72,17 @@ const Header = () => {
             />
           </svg>
         </button>
+      </div>
+
+      {/* Mobile menu */}
+      <div className={`md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300 overflow-hidden ${mobileMenuOpen ? 'max-h-64' : 'max-h-0'}`}>
+        <div className="px-6 py-4 space-y-4">
+          <a href="#services" className="block py-2 nav-link">Services</a>
+          <a href="#email-designs" className="block py-2 nav-link">Our Designs</a>
+          <a href="#why-us" className="block py-2 nav-link">Why Us</a>
+          <a href="#results" className="block py-2 nav-link">Results</a>
+          <a href="#contact" className="block py-2 button-primary text-center">Book a Call</a>
+        </div>
       </div>
     </header>
   );

@@ -62,9 +62,9 @@ const Index = () => {
                 TRANSFORMING SUBSCRIBERS INTO LIFELONG CUSTOMERS
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                While others are maximizing their ROI, are you leaving money on the table?
+                We increase your revenue by <span className="text-green-500 font-semibold">20-30%</span> in 60 days or we work for free.
               </p>
-              <a href="#contact" className="button-primary">
+              <a href="#contact" className="button-primary hover-float pulse-animation">
                 Get Free Audit
               </a>
             </div>
@@ -72,11 +72,11 @@ const Index = () => {
           
           {/* Placeholder for custom image or Canva embed */}
           <div 
-            className="fade-in-element rounded-xl overflow-hidden shadow-2xl mx-auto max-w-3xl bg-white border border-border"
+            className="fade-in-element rounded-xl overflow-hidden shadow-2xl mx-auto max-w-3xl bg-white border border-border perspective"
             ref={addToObserver}
             style={{ transitionDelay: '200ms' }}
           >
-            <div className="w-full h-full min-h-[400px] flex items-center justify-center text-muted-foreground">
+            <div className="w-full h-full min-h-[400px] flex items-center justify-center text-muted-foreground card-3d">
               <p className="text-center px-8">Canva design or interactive element embed area</p>
             </div>
           </div>
@@ -93,7 +93,7 @@ const Index = () => {
             <div className="flex flex-wrap justify-center items-center gap-12 opacity-70">
               {/* Client logos would go here */}
               {[1, 2, 3, 4, 5].map((i) => (
-                <div key={i} className="h-8 w-32 bg-muted rounded-md"></div>
+                <div key={i} className="h-8 w-32 bg-muted rounded-md hover:opacity-100 transition-opacity cursor-pointer hover:scale-105 transition-transform"></div>
               ))}
             </div>
           </div>
@@ -240,7 +240,7 @@ const Index = () => {
                 description: "Custom strategies designed for your specific business needs and audience."
               }
             ].map((item, index) => (
-              <div key={index} className="flex gap-4" style={{ transitionDelay: `${index * 100}ms` }}>
+              <div key={index} className="flex gap-4 item-hover" style={{ transitionDelay: `${index * 100}ms` }}>
                 <div className="flex-shrink-0 bg-accent/10 w-10 h-10 rounded-full flex items-center justify-center text-accent">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -255,7 +255,7 @@ const Index = () => {
           </div>
           
           <div 
-            className="fade-in-element rounded-xl overflow-hidden shadow-xl order-1 md:order-2"
+            className="fade-in-element rounded-xl overflow-hidden shadow-xl order-1 md:order-2 hover-float"
             ref={addToObserver}
             style={{ transitionDelay: '200ms' }}
           >
@@ -269,7 +269,7 @@ const Index = () => {
       </section>
       
       {/* Results Section */}
-      <section className="section bg-secondary">
+      <section id="results" className="section bg-secondary">
         <div 
           className="fade-in-element text-center mb-16"
           ref={addToObserver}
@@ -282,7 +282,7 @@ const Index = () => {
         
         <div className="max-w-4xl mx-auto">
           <div 
-            className="fade-in-element rounded-xl overflow-hidden shadow-xl"
+            className="fade-in-element rounded-xl overflow-hidden shadow-xl hover-float"
             ref={addToObserver}
           >
             <img 
@@ -294,7 +294,7 @@ const Index = () => {
         </div>
         
         <div className="text-center mt-12">
-          <a href="#contact" className="button-primary">
+          <a href="#contact" className="button-primary pulse-animation">
             Get Same Results
           </a>
         </div>
@@ -307,9 +307,9 @@ const Index = () => {
             className="fade-in-element mb-8"
             ref={addToObserver}
           >
-            <h2 className="section-title mx-auto">Ready to Boost Your Email ROI?</h2>
+            <h2 className="section-title mx-auto">Contact Us</h2>
             <p className="section-description mx-auto">
-              Book a free strategy call to discuss how we can help you grow your revenue with effective email marketing.
+              Ready to boost your email ROI? Book a free strategy call to discuss how we can help you grow your revenue.
             </p>
           </div>
           
@@ -323,7 +323,7 @@ const Index = () => {
             </a>
             
             <div className="mt-6">
-              <a href="#" className="button-primary px-8 py-4 text-lg">
+              <a href="#" className="button-primary px-8 py-4 text-lg pulse-animation">
                 Book a Call
               </a>
             </div>
