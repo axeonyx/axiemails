@@ -107,22 +107,19 @@ const Index = () => {
       </section>
 
       {/* Social Proof */}
-<section className="py-12 px-6 md:px-8 lg:px-12 bg-gray-100">
+      <section className="py-6 px-6 md:px-8 lg:px-12 bg-gray-100">
   <div className="max-w-7xl mx-auto">
-    <div className="text-center mb-10">
-      <h3 className="text-2xl font-bold uppercase tracking-wider mb-8">
+    <div className="text-center mb-4 space-y-4">
+      <h3 className="text-2xl font-bold tracking-wider">
         Over 8+ Brands trust AxieMails
       </h3>
       <div className="flex flex-wrap justify-center items-center">
         <img
           src="/1.png"
           alt="Client Logo"
-          className="h-40 md:h-80 w-160 md:w-[1280px] max-w-full object-contain cursor-pointer"
+          className="h-8 md:h-16 w-auto max-w-full object-contain cursor-pointer"
         />
       </div>
-      <p className="text-2xl font-bold mt-8">
-        Over $500k Generated in Attributed Revenue
-      </p>
     </div>
   </div>
 </section>
