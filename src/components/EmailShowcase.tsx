@@ -5,7 +5,7 @@ import React, { useEffect, useRef } from 'react';
 const emailDesigns = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=1200&h=3000&auto=format&fit=crop'
+    image: '/Design1.png'  
   },
   {
     id: 2,
