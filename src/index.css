@@ -25,8 +25,8 @@
     --muted: 213 19% 96%;
     --muted-foreground: 222 11% 42%;
 
-    --accent: 210 100% 70%;
-    --accent-foreground: 222 11% 12%;
+    --accent: 267 83% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -71,14 +71,26 @@
 @layer components {
   .hero-gradient-bg {
     background: 
-      radial-gradient(circle at 10% 10%, rgba(220, 232, 250, 0.4) 0%, rgba(255, 255, 255, 0) 50%),
-      radial-gradient(circle at 90% 80%, rgba(220, 242, 250, 0.4) 0%, rgba(255, 255, 255, 0) 50%);
+      radial-gradient(circle at 10% 10%, rgba(149, 128, 255, 0.2) 0%, rgba(255, 255, 255, 0) 50%),
+      radial-gradient(circle at 90% 80%, rgba(191, 128, 255, 0.2) 0%, rgba(255, 255, 255, 0) 50%);
+  }
+
+  .purple-glow {
+    text-shadow: 0 0 30px rgba(149, 128, 255, 0.5);
+  }
+
+  .purple-blob {
+    position: absolute;
+    background: radial-gradient(circle, rgba(149, 128, 255, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 100%;
+    z-index: -1;
+    animation: float 10s ease-in-out infinite;
   }
 
   .button-primary {
-    @apply bg-primary text-primary-foreground px-5 py-3 rounded-md 
+    @apply bg-accent text-accent-foreground px-5 py-3 rounded-md 
            font-medium transition-all duration-300 
-           hover:translate-y-[-2px] hover:shadow-[0_4px_20px_rgba(0,0,0,0.1)]
+           hover:translate-y-[-2px] hover:shadow-[0_4px_20px_rgba(149,128,255,0.4)]
            active:translate-y-0 active:shadow-none;
   }
 
@@ -109,7 +121,7 @@
 
   .card {
     @apply bg-white rounded-xl shadow-[0_4px_40px_rgba(0,0,0,0.03)] 
-           p-6 transition-all duration-500 hover:shadow-[0_8px_50px_rgba(0,0,0,0.06)];
+           p-6 transition-all duration-500 hover:shadow-[0_8px_50px_rgba(149,128,255,0.1)];
   }
 
   .section {
@@ -128,17 +140,18 @@
     @apply text-lg text-muted-foreground max-w-2xl mb-12;
   }
 
-  /* Staggered children reveal animation */
-  @for $i from 1 through 20 {
-    .reveal-children > *:nth-child($i) {
-      transition-delay: calc($i * 100ms);
-    }
-  }
-
-  /* Email showcase scroll effect */
+  /* Email showcase styling */
   .email-preview {
     overflow: hidden;
     position: relative;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 30px rgba(149, 128, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .email-preview:hover {
+    box-shadow: 0 20px 40px rgba(149, 128, 255, 0.2);
+    transform: translateY(-5px);
   }
 
   .email-preview-content {
@@ -147,6 +160,18 @@
 
   .email-preview:hover .email-preview-content {
     transform: translateY(calc(-100% + 400px));
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    50% {
+      transform: translateY(-20px) rotate(5deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
   }
 }
 

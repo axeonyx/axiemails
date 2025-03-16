@@ -7,15 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-secondary py-12 px-6 md:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* Brand */}
-          <div className="md:col-span-1">
-            <h3 className="text-xl font-bold tracking-tight mb-4">AXIEMAILS</h3>
-            <p className="text-muted-foreground max-w-xs">
-              Transforming subscribers into loyal customers through strategic email marketing.
-            </p>
-          </div>
-
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Quick Links */}
           <div className="md:col-span-1">
             <h4 className="font-semibold mb-4">Quick Links</h4>
@@ -70,7 +62,7 @@ const Footer = () => {
 
         <div className="mt-10 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground order-2 md:order-1 mt-4 md:mt-0">
-            © {currentYear} AXIEMAILS. All rights reserved.
+            © {currentYear} All rights reserved.
           </p>
           <div className="flex space-x-6 order-1 md:order-2">
             <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

@@ -29,7 +29,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <a 
           href="#" 
-          className="text-xl md:text-2xl font-bold tracking-tight transition-all hover:opacity-80"
+          className="text-xl md:text-2xl font-bold tracking-tight transition-all hover:opacity-80 purple-glow"
         >
           AXIEMAILS
         </a>

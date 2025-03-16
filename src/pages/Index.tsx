@@ -46,36 +46,38 @@ const Index = () => {
 
   return (
     <div className="relative overflow-hidden">
+      {/* Decorative blobs */}
+      <div className="purple-blob w-[500px] h-[500px] top-[-100px] right-[-100px]"></div>
+      <div className="purple-blob w-[600px] h-[600px] top-[30%] left-[-300px]" style={{ animationDelay: '3s' }}></div>
+      <div className="purple-blob w-[400px] h-[400px] bottom-[10%] right-[-200px]" style={{ animationDelay: '6s' }}></div>
+      
       <Header />
       
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center pt-20 pb-20 px-6 md:px-8 lg:px-12 hero-gradient-bg">
+      <section className="min-h-screen flex items-center pt-28 pb-20 px-6 md:px-8 lg:px-12 hero-gradient-bg">
         <div className="max-w-7xl mx-auto w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="flex flex-col items-center text-center mb-16">
             <div className="fade-in-element" ref={addToObserver}>
-              <div className="bg-accent/10 text-accent rounded-full px-4 py-2 inline-block mb-6">
-                Strategic Email Marketing
-              </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6 max-w-4xl purple-glow">
                 TRANSFORMING SUBSCRIBERS INTO LIFELONG CUSTOMERS
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 max-w-xl">
+              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 While others are maximizing their ROI, are you leaving money on the table?
               </p>
               <a href="#contact" className="button-primary">
                 Get Free Audit
               </a>
             </div>
-            
-            {/* Placeholder for custom image or Canva embed */}
-            <div 
-              className="fade-in-element rounded-xl overflow-hidden shadow-2xl aspect-square md:aspect-video lg:aspect-auto bg-white border border-border"
-              ref={addToObserver}
-              style={{ transitionDelay: '200ms' }}
-            >
-              <div className="w-full h-full min-h-[400px] flex items-center justify-center text-muted-foreground">
-                <p className="text-center px-8">Canva design or interactive element embed area</p>
-              </div>
+          </div>
+          
+          {/* Placeholder for custom image or Canva embed */}
+          <div 
+            className="fade-in-element rounded-xl overflow-hidden shadow-2xl mx-auto max-w-3xl bg-white border border-border"
+            ref={addToObserver}
+            style={{ transitionDelay: '200ms' }}
+          >
+            <div className="w-full h-full min-h-[400px] flex items-center justify-center text-muted-foreground">
+              <p className="text-center px-8">Canva design or interactive element embed area</p>
             </div>
           </div>
         </div>
@@ -239,7 +241,7 @@ const Index = () => {
               }
             ].map((item, index) => (
               <div key={index} className="flex gap-4" style={{ transitionDelay: `${index * 100}ms` }}>
-                <div className="flex-shrink-0 bg-secondary w-10 h-10 rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 bg-accent/10 w-10 h-10 rounded-full flex items-center justify-center text-accent">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
@@ -278,33 +280,17 @@ const Index = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[1, 2, 3].map((i) => (
-            <div 
-              key={i} 
-              className="fade-in-element card flex flex-col"
-              ref={addToObserver}
-              style={{ transitionDelay: `${i * 100}ms` }}
-            >
-              <div className="h-60 bg-muted rounded-lg mb-6 overflow-hidden">
-                <img 
-                  src={`https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=600&h=400&auto=format&fit=crop&crop=edges`} 
-                  alt={`Client result ${i}`}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="mb-4">
-                <div className="flex items-center mb-2">
-                  <div className="text-accent font-bold text-lg mr-2">↑ 156%</div>
-                  <div className="text-sm text-muted-foreground">Revenue increase</div>
-                </div>
-                <h3 className="font-semibold text-lg mb-2">E-commerce Client {i}</h3>
-                <p className="text-muted-foreground">
-                  Implemented strategic welcome sequence and abandoned cart emails to recover lost sales.
-                </p>
-              </div>
-            </div>
-          ))}
+        <div className="max-w-4xl mx-auto">
+          <div 
+            className="fade-in-element rounded-xl overflow-hidden shadow-xl"
+            ref={addToObserver}
+          >
+            <img 
+              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1200&auto=format&fit=crop"
+              alt="Client results"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
         
         <div className="text-center mt-12">
