@@ -63,7 +63,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto w-full">
           <div className="flex flex-col items-center text-center mb-16">
             <div className="fade-in-element" ref={addToObserver}>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6 max-w-4xl purple-glow">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6 max-w-4xl">
                 TRANSFORMING SUBSCRIBERS INTO LIFELONG CUSTOMERS
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -79,7 +79,7 @@ const Index = () => {
 
           {/* Canva embed */}
           <div
-            className="fade-in-element rounded-xl overflow-hidden shadow-2xl mx-auto max-w-3xl perspective"
+            className="fade-in-element rounded-xl overflow-hidden shadow-2xl mx-auto max-w-3xl"
             ref={addToObserver}
             style={{ transitionDelay: '200ms' }}
           >

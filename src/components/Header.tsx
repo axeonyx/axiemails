@@ -15,7 +15,7 @@ const Header = () => {
   }, [scrolled]);
   return <header className={cn('fixed top-0 left-0 right-0 z-50 py-5 px-6 md:px-8 lg:px-12 transition-all duration-300', scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-5')}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <a href="#" className="text-xl md:text-2xl font-bold tracking-tight transition-all hover:opacity-80 purple-glow">AxieMails</a>
+        <a href="#" className="text-xl md:text-2xl font-bold tracking-tight transition-all hover:opacity-80">AxieMails</a>
         
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#services" className="nav-link">Services</a>
