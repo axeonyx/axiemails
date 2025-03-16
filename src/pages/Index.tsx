@@ -64,7 +64,7 @@ const Index = () => {
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 We increase your revenue by <span className="text-green-500 font-semibold">20-30%</span> in 60 days or we work for free.
               </p>
-              <a href="#contact" className="button-primary hover-float pulse-animation">
+              <a href="#contact" className="button-primary hover-float">
                 Get Free Audit
               </a>
             </div>
@@ -301,7 +301,7 @@ const Index = () => {
         </div>
         
         <div className="text-center mt-12">
-          <a href="#contact" className="button-primary pulse-animation">
+          <a href="#contact" className="button-primary">
             Get Same Results
           </a>
         </div>
@@ -330,7 +330,7 @@ const Index = () => {
             </a>
             
             <div className="mt-6">
-              <a href="#" className="button-primary px-8 py-4 text-lg pulse-animation">
+              <a href="#" className="button-primary px-8 py-4 text-lg">
                 Book a Call
               </a>
             </div>

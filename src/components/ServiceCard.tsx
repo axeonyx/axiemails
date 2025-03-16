@@ -19,7 +19,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     <div className={cn(
       "card group p-8 h-full flex flex-col relative overflow-hidden", 
       "before:absolute before:inset-0 before:w-full before:h-full before:bg-gradient-to-r before:from-transparent before:to-transparent before:opacity-0 before:transition-all before:duration-500 hover:before:opacity-100 hover:before:from-white/0 hover:before:to-accent/5",
-      "transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(149,128,255,0.15)]",
+      "transition-all duration-300 hover:shadow-[0_10px_40px_rgba(149,128,255,0.15)]",
       className
     )}>
       <div className="mb-6 text-accent transform transition-transform duration-300 group-hover:scale-110">
