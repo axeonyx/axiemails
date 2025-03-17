@@ -120,6 +120,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Email Showcase Section */}
+      <EmailShowcase />
+      
       {/* Services Section */}
       <section id="services" className="section">
         <div className="fade-in-element text-center mb-16" ref={addToObserver}>
@@ -399,9 +402,6 @@ const Index = () => {
           ))}
         </div>
       </section>
-
-      {/* Email Showcase Section */}
-      <EmailShowcase />
 
       {/* Why Us Section */}
       <section id="why-us" className="section bg-gradient-to-br from-white to-purple-50">
