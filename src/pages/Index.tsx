@@ -406,7 +406,7 @@ const Index = () => {
       {/* Why Us Section */}
       <section id="why-us" className="section bg-gradient-to-br from-white to-purple-50">
         <div className="fade-in-element text-center mb-16" ref={addToObserver}>
-          <h2 className="section-title mx-auto">Why Choose <span className="text-accent">AxieMails</span>?</h2>
+          <h2 className="section-title mx-auto">Why Choose AxieMails?</h2>
           <p className="section-description mx-auto">
             Our approach is different because we focus on what truly matters -
             <span className="font-bold"> RESULTS</span>.
