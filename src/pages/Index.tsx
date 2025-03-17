@@ -404,8 +404,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Metrics Section */}
-      <section className="section bg-gradient-to-br from-white to-accent/5">
+       {/* Metrics Section */}
+<section className="section bg-gradient-to-br from-white to-accent/5">
   <div className="fade-in-element text-center mb-16" ref={addToObserver}>
     <h2 className="section-title mx-auto">Key Performance Metrics</h2>
     <p className="section-description mx-auto">
@@ -426,7 +426,7 @@ const Index = () => {
           </svg>
         }
         className="bg-gradient-to-br from-white to-purple-50"
-        observerRef={addToObserver} // Add this prop
+        observerRef={addToObserver}
       />
     </div>
     
@@ -441,7 +441,7 @@ const Index = () => {
           </svg>
         }
         className="bg-gradient-to-br from-white to-blue-50"
-        observerRef={addToObserver} // Add this prop
+        observerRef={addToObserver}
       />
     </div>
     
@@ -459,7 +459,7 @@ const Index = () => {
           </svg>
         }
         className="bg-gradient-to-br from-white to-green-50"
-        observerRef={addToObserver} // Add this prop
+        observerRef={addToObserver}
       />
     </div>
     
@@ -475,7 +475,7 @@ const Index = () => {
           </svg>
         }
         className="bg-gradient-to-br from-white to-yellow-50"
-        observerRef={addToObserver} // Add this prop
+        observerRef={addToObserver}
       />
     </div>
   </div>

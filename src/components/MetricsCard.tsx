@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
@@ -8,6 +8,7 @@ interface MetricsCardProps {
   description?: string;
   icon?: React.ReactNode;
   className?: string;
+  observerRef?: (node: HTMLElement | null) => void;
 }
 
 const MetricsCard: React.FC<MetricsCardProps> = ({
@@ -16,52 +17,80 @@ const MetricsCard: React.FC<MetricsCardProps> = ({
   description,
   icon,
   className,
+  observerRef,
 }) => {
   const [displayValue, setDisplayValue] = useState('0');
   const [isAnimating, setIsAnimating] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
+  const hasAnimated = useRef(false);
 
+  // Pass the card ref to the parent observer for fade-in effect
   useEffect(() => {
-    setIsAnimating(true);
-    let animationFrame: number;
-    let startTime: number | undefined;
+    if (observerRef && cardRef.current) {
+      observerRef(cardRef.current);
+    }
+  }, [observerRef]);
 
-    const animate = (timestamp: number) => {
-      if (!startTime) startTime = timestamp;
-      const progress = timestamp - startTime;
+  // Animation logic triggered when card enters viewport
+  useEffect(() => {
+    if (!cardRef.current || hasAnimated.current) return;
 
-      // Determine the value format and generate random numbers accordingly
-      let randomValue: string;
-      if (value.includes('%')) {
-        randomValue = Math.floor(Math.random() * 100) + '%';
-      } else if (value.includes('x')) {
-        randomValue = Math.floor(Math.random() * 50) + 'x';
-      } else {
-        randomValue = Math.floor(Math.random() * 100).toString();
-      }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry.isIntersecting && !isAnimating && !hasAnimated.current) {
+          setIsAnimating(true);
+          let animationFrame: number;
+          let startTime: number | undefined;
 
-      setDisplayValue(randomValue);
+          const animate = (timestamp: number) => {
+            if (!startTime) startTime = timestamp;
+            const progress = timestamp - startTime;
 
-      // Animation duration: 1.5 seconds
-      if (progress < 1500) {
-        animationFrame = requestAnimationFrame(animate);
-      } else {
-        setDisplayValue(value);
-        setIsAnimating(false);
-      }
-    };
+            let randomValue: string;
+            if (value.includes('%')) {
+              randomValue = Math.floor(Math.random() * 100) + '%';
+            } else if (value.includes('x')) {
+              randomValue = Math.floor(Math.random() * 50) + 'x';
+            } else {
+              randomValue = Math.floor(Math.random() * 100).toString();
+            }
 
-    animationFrame = requestAnimationFrame(animate);
+            setDisplayValue(randomValue);
 
-    // Cleanup
+            if (progress < 1500) {
+              animationFrame = requestAnimationFrame(animate);
+            } else {
+              setDisplayValue(value);
+              setIsAnimating(false);
+              hasAnimated.current = true;
+            }
+          };
+
+          animationFrame = requestAnimationFrame(animate);
+
+          return () => {
+            if (animationFrame) {
+              cancelAnimationFrame(animationFrame);
+            }
+          };
+        }
+      },
+      { threshold: 0.5 } // Trigger when 50% of the card is visible
+    );
+
+    observer.observe(cardRef.current);
+
     return () => {
-      if (animationFrame) {
-        cancelAnimationFrame(animationFrame);
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
       }
     };
   }, [value]);
 
   return (
     <Card
+      ref={cardRef}
       className={cn(
         'border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1',
         className
