@@ -79,7 +79,7 @@ const FAQSection: React.FC = () => {
     },
     {
       question: "Can you work with our existing email service provider?",
-      answer: "We believe Klaviyo is the best ESP for Ecommerce businesses, So we only work with Klaviyo.So if you want to migrate to Klaviyo we can also manage that process seamlessly."
+      answer: "We believe Klaviyo to be the best ESP for Ecommerce businesses, So we only work with Klaviyo.So if you want to migrate to Klaviyo we can also manage that process seamlessly."
     }
   ];
 
