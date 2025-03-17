@@ -129,7 +129,7 @@ const Index = () => {
         <div className="fade-in-element text-center mb-16" ref={addToObserver}>
           <h2 className="section-title mx-auto">Our Services</h2>
           <p className="section-description mx-auto">
-          Everything You Need to Make Email Marketing Work for You.
+          Everything you need to make email marketing work for you.
           From strategy to design, We’ve got the tools and expertise to turn your email list into a revenue machine.
           </p>
         </div>
@@ -163,7 +163,7 @@ const Index = () => {
               ),
               title: 'Email Strategy',
               description:
-                'We develop comprehensive email strategies aligned with your business goals, audience needs, and market trends.',
+                'We’ll create a game plan tailored to your business, so every email feels personal and drives results.',
             },
             {
               icon: (
@@ -192,7 +192,7 @@ const Index = () => {
               ),
               title: 'Automation Sequences',
               description:
-                'Our high-converting automated sequences nurture leads and turn customers into repeat buyers on autopilot.',
+                'Our automated sequences turn leads into loyal customers—without you lifting a finger.',
             },
             {
               icon: (
@@ -249,7 +249,7 @@ const Index = () => {
               ),
               title: 'Email Design',
               description:
-                'Beautiful, responsive email designs that enhance your brand while maximizing engagement and conversions.',
+                'Emails so good, your subscribers will actually look forward to opening them. (Yes, really.)',
             },
             {
               icon: (
@@ -285,7 +285,7 @@ const Index = () => {
               ),
               title: 'List Growth & Segmentation',
               description:
-                'Strategic lead magnets and opt-in methods to grow your email list and Segmentation to send targeted campaigns that resonate with your audience.',
+                'Grow your list with people who actually want to hear from you—and send them emails they’ll love.',
             },
             {
               icon: (
@@ -356,7 +356,7 @@ const Index = () => {
               ),
               title: 'Optimization & A/B Testing',
               description:
-                'Continuous analysis and refinement of your email campaigns to maximize open rates, clicks, and conversions through A/B Testing.',
+                'We’ll test, tweak, and optimize until your emails are performing at their absolute best.',
             },
             {
               icon: (
@@ -385,7 +385,7 @@ const Index = () => {
               ),
               title: 'Email Deliverability',
               description:
-                'We help maximize your email reach by ensuring your campaigns land in your subscribers inboxes, not spam folders.',
+                'Say goodbye to the spam folder. We’ll make sure your emails land right where they belong—in your subscribers’ inboxes.Say goodbye to the spam folder. We’ll make sure your emails land right where they belong—in your subscribers’ inboxes.',
             },
           ].map((service, index) => (
             <div
@@ -567,7 +567,7 @@ const Index = () => {
         <div className="fade-in-element text-center mb-16" ref={addToObserver}>
           <h2 className="section-title mx-auto">Client Results</h2>
           <p className="section-description mx-auto">
-            Real results from businesses just like yours. We help you achieve 20-30% increase in revenue through email marketing.
+          See what we’ve done for Businesses like yours. We’ve helped our clients boost revenue by 20-30% and we’re ready to do the same for you.
           </p>
         </div>
 
