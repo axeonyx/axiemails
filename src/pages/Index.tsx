@@ -106,7 +106,7 @@ const Index = () => {
       <section className="py-8 px-6 md:px-8 lg:px-12 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 space-y-4">
-            <h3 className="text-2xl font-bold tracking-wider text-primary">
+            <h3 className="text-2xl font-semibold tracking-wider text-primary">
               Over 8+ Brands trust AxieMails
             </h3>
             <div className="flex flex-wrap justify-center items-center gap-8">
