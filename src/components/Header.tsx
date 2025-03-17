@@ -1,11 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 20;
@@ -16,7 +13,6 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [scrolled]);
-
   return <header className={cn('fixed top-0 left-0 right-0 z-50 py-5 px-6 md:px-8 lg:px-12 transition-all duration-300', scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-5')}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <a href="#" className="text-xl md:text-2xl font-bold tracking-tight transition-all hover:opacity-80">AxieMails</a>
@@ -26,7 +22,7 @@ const Header = () => {
           <a href="#email-designs" className="nav-link">Our Designs</a>
           <a href="#why-us" className="nav-link">Why Us</a>
           <a href="#results" className="nav-link">Results</a>
-          <a href="https://calendly.com/anish-axiemails/30min" className="button-primary-small">
+          <a href="https://calendly.com/anish-axiemails/30min" className="button-primary">
             Get a Free Audit
           </a>
         </nav>
@@ -47,9 +43,9 @@ const Header = () => {
           <a href="#email-designs" className="block py-2 nav-link">Our Designs</a>
           <a href="#why-us" className="block py-2 nav-link">Why Us</a>
           <a href="#results" className="block py-2 nav-link">Results</a>
+
         </div>
       </div>
     </header>;
 };
-
 export default Header;

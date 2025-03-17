@@ -4,7 +4,6 @@ import EmailShowcase from '@/components/EmailShowcase';
 import ServiceCard from '@/components/ServiceCard';
 import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
-import AnimatedBlobs from '@/components/AnimatedBlobs';
 
 const Index = () => {
   const observerRefs = useRef<HTMLElement[]>([]);
@@ -47,7 +46,15 @@ const Index = () => {
   return (
     <div className="relative overflow-hidden">
       {/* Decorative blobs */}
-      <AnimatedBlobs />
+      <div className="purple-blob w-[500px] h-[500px] top-[-100px] right-[-100px]"></div>
+      <div
+        className="purple-blob w-[600px] h-[600px] top-[30%] left-[-300px]"
+        style={{ animationDelay: '3s' }}
+      ></div>
+      <div
+        className="purple-blob w-[400px] h-[400px] bottom-[10%] right-[-200px]"
+        style={{ animationDelay: '6s' }}
+      ></div>
 
       <Header />
 
@@ -56,18 +63,15 @@ const Index = () => {
         <div className="max-w-7xl mx-auto w-full">
           <div className="flex flex-col items-center text-center mb-16">
             <div className="fade-in-element" ref={addToObserver}>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6 max-w-4xl purple-glow">
-                TRANSFORMING SUBSCRIBERS INTO <span className="text-accent">LIFELONG CUSTOMERS</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6 max-w-4xl">
+                TRANSFORMING SUBSCRIBERS INTO LIFELONG CUSTOMERS
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 We increase your revenue by{' '}
                 <span className="text-green-500 font-semibold">20-30%</span> in
                 60 days or we work for free.
               </p>
-              <a 
-                href="https://calendly.com/anish-axiemails/30min" 
-                className="button-primary-small hover-float mx-auto"
-              >
+              <a href="https://calendly.com/anish-axiemails/30min" className="button-primary hover-float">
                 Get Free Audit
               </a>
             </div>
@@ -75,7 +79,7 @@ const Index = () => {
 
           {/* Canva embed */}
           <div
-            className="fade-in-element rounded-xl overflow-hidden shadow-2xl mx-auto max-w-3xl perspective"
+            className="fade-in-element rounded-xl overflow-hidden shadow-2xl mx-auto max-w-3xl"
             ref={addToObserver}
             style={{ transitionDelay: '200ms' }}
           >
@@ -103,27 +107,27 @@ const Index = () => {
       </section>
 
       {/* Social Proof */}
-      <section className="py-8 px-6 md:px-8 lg:px-12 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-6 space-y-4">
-            <h3 className="text-2xl font-bold tracking-wider text-primary">
-              Over 8+ Brands trust <span className="text-accent">AxieMails</span>
-            </h3>
-            <div className="flex flex-wrap justify-center items-center gap-8">
-              <img
-                src="/1.png"
-                alt="Client Logo"
-                className="h-10 md:h-20 w-auto max-w-full object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <section className="py-6 px-6 md:px-8 lg:px-12 bg-gray-100">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-4 space-y-4">
+      <h3 className="text-2xl font-bold tracking-wider">
+        Over 8+ Brands trust AxieMails
+      </h3>
+      <div className="flex flex-wrap justify-center items-center">
+        <img
+          src="/1.png"
+          alt="Client Logo"
+          className="h-8 md:h-16 w-auto max-w-full object-contain cursor-pointer"
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Services Section */}
       <section id="services" className="section">
         <div className="fade-in-element text-center mb-16" ref={addToObserver}>
-          <h2 className="section-title mx-auto">Our <span className="text-accent">Services</span></h2>
+          <h2 className="section-title mx-auto">Our Services</h2>
           <p className="section-description mx-auto">
             Our Strategic Services help you connect with your customers and drive
             more revenue through email marketing.
@@ -404,12 +408,12 @@ const Index = () => {
       <EmailShowcase />
 
       {/* Why Us Section */}
-      <section id="why-us" className="section bg-gradient-to-br from-white to-purple-50">
+      <section id="why-us" className="section">
         <div className="fade-in-element text-center mb-16" ref={addToObserver}>
-          <h2 className="section-title mx-auto">Why Choose <span className="text-accent">AxieMails</span>?</h2>
+          <h2 className="section-title mx-auto">Why Choose AxieMails?</h2>
           <p className="section-description mx-auto">
             Our approach is different because we focus on what truly matters -
-            <span className="font-bold"> RESULTS</span>.
+            RESULTS.
           </p>
         </div>
 
@@ -539,7 +543,7 @@ const Index = () => {
             <div className="mt-6">
               <a
                 href="https://calendly.com/anish-axiemails/30min"
-                className="button-primary-small px-8 py-3 text-base"
+                className="button-primary px-8 py-4 text-lg"
               >
                 Book a Call
               </a>
@@ -558,4 +562,3 @@ const Index = () => {
 };
 
 export default Index;
-
