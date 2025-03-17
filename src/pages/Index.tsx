@@ -5,7 +5,6 @@ import ServiceCard from '@/components/ServiceCard';
 import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 import AnimatedBlobs from '@/components/AnimatedBlobs';
-import { Sparkles } from 'lucide-react';
 
 const Index = () => {
   const observerRefs = useRef<HTMLElement[]>([]);
@@ -67,9 +66,8 @@ const Index = () => {
               </p>
               <a 
                 href="https://calendly.com/anish-axiemails/30min" 
-                className="button-primary hover-float flex items-center gap-2 mx-auto"
+                className="button-primary-small hover-float mx-auto"
               >
-                <Sparkles className="w-5 h-5" />
                 Get Free Audit
               </a>
             </div>
@@ -541,7 +539,7 @@ const Index = () => {
             <div className="mt-6">
               <a
                 href="https://calendly.com/anish-axiemails/30min"
-                className="button-primary px-8 py-4 text-lg"
+                className="button-primary-small px-8 py-3 text-base"
               >
                 Book a Call
               </a>
