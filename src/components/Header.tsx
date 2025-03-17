@@ -22,8 +22,8 @@ const Header = () => {
         <a href="#" className="text-xl md:text-2xl font-bold tracking-tight transition-all hover:opacity-80">AxieMails</a>
         
         <nav className="hidden md:flex items-center space-x-8">
+        <a href="#email-designs" className="nav-link">Our Designs</a>
           <a href="#services" className="nav-link">Services</a>
-          <a href="#email-designs" className="nav-link">Our Designs</a>
           <a href="#why-us" className="nav-link">Why Us</a>
           <a href="#results" className="nav-link">Results</a>
           <a href="https://calendly.com/anish-axiemails/30min" className="button-primary-small">
