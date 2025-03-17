@@ -57,7 +57,7 @@ const Index = () => {
           <div className="flex flex-col items-center text-center mb-16">
             <div className="fade-in-element" ref={addToObserver}>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6 max-w-4xl purple-glow">
-                TRANSFORMING SUBSCRIBERS INTO <span className="text-accent">LIFELONG CUSTOMERS</span>
+                TRANSFORMING SUBSCRIBERS INTO LIFELONG CUSTOMERS
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 We increase your revenue by{' '}
@@ -107,7 +107,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 space-y-4">
             <h3 className="text-2xl font-bold tracking-wider text-primary">
-              Over 8+ Brands trust <span className="text-accent">AxieMails</span>
+              Over 8+ Brands trust AxieMails
             </h3>
             <div className="flex flex-wrap justify-center items-center gap-8">
               <img
@@ -123,7 +123,7 @@ const Index = () => {
       {/* Services Section */}
       <section id="services" className="section">
         <div className="fade-in-element text-center mb-16" ref={addToObserver}>
-          <h2 className="section-title mx-auto">Our <span className="text-accent">Services</span></h2>
+          <h2 className="section-title mx-auto">Our Services</h2>
           <p className="section-description mx-auto">
             Our Strategic Services help you connect with your customers and drive
             more revenue through email marketing.
