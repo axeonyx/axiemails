@@ -19,7 +19,7 @@ const MetricsCard: React.FC<MetricsCardProps> = ({
   className,
   observerRef,
 }) => {
-  const [displayValue, setDisplayValue] = useState('0');
+  const [displayValue, setDisplayValue] = useState('1'); // Start at 1
   const [isAnimating, setIsAnimating] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
   const hasAnimated = useRef(false);
@@ -43,25 +43,29 @@ const MetricsCard: React.FC<MetricsCardProps> = ({
           let animationFrame: number;
           let startTime: number | undefined;
 
+          // Parse the target value and unit
+          const unit = value.includes('%') ? '%' : value.includes('x') ? 'x' : '';
+          const targetNumber = parseFloat(value.replace(/[^0-9.]/g, ''));
+          const startNumber = 1;
+          const duration = 1500; // Animation duration in milliseconds
+
           const animate = (timestamp: number) => {
             if (!startTime) startTime = timestamp;
             const progress = timestamp - startTime;
+            const progressFraction = Math.min(progress / duration, 1);
 
-            let randomValue: string;
-            if (value.includes('%')) {
-              randomValue = Math.floor(Math.random() * 100) + '%';
-            } else if (value.includes('x')) {
-              randomValue = Math.floor(Math.random() * 50) + 'x';
-            } else {
-              randomValue = Math.floor(Math.random() * 100).toString();
-            }
+            // Calculate the current number based on progress
+            const currentNumber = Math.floor(
+              startNumber + (targetNumber - startNumber) * progressFraction
+            );
+            const newValue = `${currentNumber}${unit}`;
 
-            setDisplayValue(randomValue);
+            setDisplayValue(newValue);
 
-            if (progress < 1500) {
+            if (progress < duration) {
               animationFrame = requestAnimationFrame(animate);
             } else {
-              setDisplayValue(value);
+              setDisplayValue(value); // Ensure exact final value
               setIsAnimating(false);
               hasAnimated.current = true;
             }
