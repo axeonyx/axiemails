@@ -50,9 +50,9 @@ const EmailShowcase = () => {
     <section id="email-designs" ref={sectionRef} className="section bg-secondary">
       <div className="max-w-4xl mx-auto text-center">
         <div className="fade-in-element">
-          <h2 className="section-title text-center mx-auto mb-6">Discover Our Email Designs That Drive Results.</h2>
+          <h2 className="section-title text-center mx-auto mb-6">See the Emails That Get Clicks, Opens, and Sales.</h2>
           <p className="section-description text-center mx-auto mb-14">
-            Hover over each design to scroll through our high-converting Email Designs.
+          Check out our high-converting designs, Hover to see how we make emails that actually work.
           </p>
         </div>
       </div>

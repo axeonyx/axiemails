@@ -61,15 +61,15 @@ const Index = () => {
                 We help you turn subscribers into lifelong customers.
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                We increase your revenue by{' '}
-                <span className="text-green-500 font-semibold">20-30%</span> in
+                Increase your revenue by{' '}
+                <span className="text-green-500 font-semibold">15-30%</span> in
                 60 days or we work for free.
               </p>
               <a 
                 href="https://calendly.com/anish-axiemails/30min" 
                 className="button-primary-small hover-float mx-auto"
               >
-                Get Free Audit
+                Get Your Free Audit
               </a>
             </div>
           </div>
@@ -108,7 +108,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 space-y-4">
             <h3 className="text-2xl font-semibold tracking-wider text-primary">
-              Over 8+ Brands trust AxieMails
+            Helped Over 8+ Brands to Grow Their Business
             </h3>
             <div className="flex flex-wrap justify-center items-center gap-8">
               <img
@@ -129,8 +129,8 @@ const Index = () => {
         <div className="fade-in-element text-center mb-16" ref={addToObserver}>
           <h2 className="section-title mx-auto">Our Services</h2>
           <p className="section-description mx-auto">
-            Our Strategic Services help you connect with your customers and drive
-            more revenue through email marketing.
+          Everything You Need to Make Email Marketing Work for You.
+          From strategy to design, We’ve got the tools and expertise to turn your email list into a revenue machine.
           </p>
         </div>
 
