@@ -409,7 +409,7 @@ const Index = () => {
         <div className="fade-in-element text-center mb-16" ref={addToObserver}>
           <h2 className="section-title mx-auto">Key Performance Metrics</h2>
           <p className="section-description mx-auto">
-            Our email marketing strategies consistently outperform industry standards
+            We consistently outperform industry standard metrics.
           </p>
         </div>
 
@@ -432,8 +432,8 @@ const Index = () => {
           <div className="fade-in-element" ref={addToObserver} style={{ transitionDelay: '200ms' }}>
             <MetricsCard
               title="Click Rate"
-              value="12%"
-              description="Industry average: 7%"
+              value="10%"
+              description="Industry average: 6%"
               icon={
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22 12H18L15 21L9 3L6 12H2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -446,8 +446,8 @@ const Index = () => {
           <div className="fade-in-element" ref={addToObserver} style={{ transitionDelay: '300ms' }}>
             <MetricsCard
               title="Conversion Rate"
-              value="8.5%"
-              description="Industry average: 3.4%"
+              value="4%"
+              description="Industry average: 1.5%"
               icon={
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -463,7 +463,7 @@ const Index = () => {
           <div className="fade-in-element" ref={addToObserver} style={{ transitionDelay: '400ms' }}>
             <MetricsCard
               title="ROI"
-              value="350%"
+              value="45x ROI from Every Dollar You Invest"
               description="Return on investment"
               icon={
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
