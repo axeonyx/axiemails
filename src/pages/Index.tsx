@@ -567,7 +567,7 @@ const Index = () => {
         <div className="fade-in-element text-center mb-16" ref={addToObserver}>
           <h2 className="section-title mx-auto">Client Results</h2>
           <p className="section-description mx-auto">
-            Real results from businesses just like yours. We help you achieve 20-30% increase in revenue through emaail marketing.
+            Real results from businesses just like yours. We help you achieve 20-30% increase in revenue through email marketing.
           </p>
         </div>
 
@@ -598,7 +598,7 @@ const Index = () => {
             <h2 className="section-title mx-auto">Contact Us</h2>
             <p className="section-description mx-auto">
               Ready to boost your email ROI? Book a free strategy call to
-              discuss how we can help you grow your revenue.
+              discuss how we can help you scale your business.
             </p>
           </div>
 
