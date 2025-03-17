@@ -161,6 +161,22 @@ export default {
 					'100%': {
 						transform: 'rotate(360deg)'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0) rotate(0)'
+					},
+					'50%': {
+						transform: 'translateY(-20px) rotate(5deg)'
+					}
+				},
+				'pulse-subtle': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.7'
+					}
 				}
 			},
 			animation: {
@@ -173,11 +189,13 @@ export default {
 				'scale-in': 'scale-in 0.3s ease-out forwards',
 				'scale-out': 'scale-out 0.3s ease-out forwards',
 				'rotate-180': 'rotate-180 0.3s ease-in-out forwards',
-				'rotate-360': 'rotate-360 0.6s linear'
+				'rotate-360': 'rotate-360 0.6s linear',
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-subtle': 'pulse-subtle 3s ease-in-out infinite',
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
-				display: ['SF Pro Display', 'Inter', 'sans-serif']
+				display: ['Poppins', 'Inter', 'sans-serif']
 			},
 			transitionTimingFunction: {
 				'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
