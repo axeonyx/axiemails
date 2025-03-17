@@ -76,7 +76,7 @@ const Index = () => {
 
           {/* Canva embed */}
           <div
-            className="fade-in-element rounded-xl overflow-hidden shadow-2xl mx-auto max-w-3xl perspective"
+            className="fade-in-element rounded-xl overflow-hidden shadow-2xl mx-auto max-w-3xl"
             ref={addToObserver}
             style={{ transitionDelay: '200ms' }}
           >
