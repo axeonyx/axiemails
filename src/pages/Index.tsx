@@ -463,8 +463,8 @@ const Index = () => {
           <div className="fade-in-element" ref={addToObserver} style={{ transitionDelay: '400ms' }}>
             <MetricsCard
               title="ROI"
-              value="45x ROI from Every Dollar You Invest"
-              description="Return on investment"
+              value="45x"
+              description="45x Return on investment"
               icon={
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 2V22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
