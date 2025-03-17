@@ -385,7 +385,7 @@ const Index = () => {
               ),
               title: 'Email Deliverability',
               description:
-                'Say goodbye to the spam folder. We’ll make sure your emails land right where they belong—in your subscribers’ inboxes.Say goodbye to the spam folder. We’ll make sure your emails land right where they belong—in your subscribers’ inboxes.',
+                'Say goodbye to the spam folder. We’ll make sure your emails land right where they belong—in your subscribers’ inboxes.',
             },
           ].map((service, index) => (
             <div

@@ -63,7 +63,7 @@ const FAQSection: React.FC = () => {
   const faqs = [
     {
       question: "What makes AXIEMAILS different from other email marketing agencies?",
-      answer: "Unlike general marketing agencies, we specialize exclusively in email marketing with a focus on conversion optimization. Our team has years of experience crafting high-performing email sequences that build relationships while driving revenue."
+      answer: "Unlike general marketing agencies, We specialize exclusively in Email & SMS Marketing with a focus on conversion optimization. Our team has years of experience crafting high-performing email sequences that build relationships while driving revenue."
     },
     {
       question: "How quickly can I expect to see results?",
@@ -71,7 +71,7 @@ const FAQSection: React.FC = () => {
     },
     {
       question: "Do you offer ongoing support after the initial setup?",
-      answer: "Absolutely. We offer various maintenance packages to ensure your email marketing continues to perform optimally. Our team can handle everything from campaign management to performance analysis and iterative improvements."
+      answer: "Absolutely. After the initial setup, We work on a monthly retainer basis to ensure your email marketing continues to perform optimally. Our team can handle everything from campaign management to performance analysis and iterative improvements."
     },
     {
       question: "How do you measure the success of email campaigns?",
@@ -79,7 +79,7 @@ const FAQSection: React.FC = () => {
     },
     {
       question: "Can you work with our existing email service provider?",
-      answer: "Yes! We have experience with all major email platforms including Klaviyo, Mailchimp, ActiveCampaign, HubSpot, and many others. If a platform migration would benefit your business, we can also manage that process seamlessly."
+      answer: "We believe Klaviyo is the best ESP for Ecommerce businesses, So we only work with Klaviyo.So if you want to migrate to Klaviyo we can also manage that process seamlessly."
     }
   ];
 
