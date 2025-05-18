@@ -93,7 +93,7 @@ const Index = () => {
 
 
       {/* Social Proof */}
-      <section className="py-8 px-6 md:px-8 lg:px-12 bg-primary">
+      <section className="py-8 px-6 md:px-8 lg:px-12 hero-gradient-bg">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 space-y-4">
             <h3 className="text-2xl font-semibold tracking-wider text-primary">
