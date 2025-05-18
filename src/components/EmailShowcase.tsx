@@ -47,7 +47,7 @@ const EmailShowcase = () => {
   }, []);
 
   return (
-    <section id="email-designs" ref={sectionRef} className="section bg-secondary">
+    <section id="email-designs" ref={sectionRef} className="section bg-white">
       <div className="max-w-4xl mx-auto text-center">
         <div className="fade-in-element">
           <h2 className="section-title text-center mx-auto mb-6">See the Emails That Get Clicks, Opens, and Sales.</h2>
