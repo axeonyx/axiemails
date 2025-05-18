@@ -63,7 +63,7 @@ const Index = () => {
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Increase your revenue by{' '}
                 <span className="text-green-500 font-semibold">15-30%</span> in
-                60 days or we work for free.
+                60 days through strategic email marketing.
               </p>
               <a 
                 href="https://calendly.com/anish-axiemails/30min" 
@@ -74,34 +74,6 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Canva embed */}
-          <div
-            className="fade-in-element rounded-xl overflow-hidden shadow-2xl mx-auto max-w-3xl"
-            ref={addToObserver}
-            style={{ transitionDelay: '200ms' }}
-          >
-            <div className="w-full h-full relative aspect-video">
-              <iframe
-                loading="lazy"
-                style={{
-                  position: 'absolute',
-                  width: '100%',
-                  height: '100%',
-                  top: 0,
-                  left: 0,
-                  border: 'none',
-                  padding: 0,
-                  margin: 0,
-                }}
-                src="https://www.canva.com/design/DAGf2CaurqM/IsWH6s4b9qBMX9FJuJwM8w/view?embed"
-                allowFullScreen={true}
-                allow="fullscreen"
-                className="card-3d"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Social Proof */}
       <section className="py-8 px-6 md:px-8 lg:px-12 bg-gray-50">
