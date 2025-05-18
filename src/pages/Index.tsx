@@ -52,40 +52,43 @@ const Index = () => {
 
       <Header />
 
-      {/* Hero Section */}
-      <section className="min-h-screen flex items-center pt-28 pb-0 px-6 md:px-8 lg:px-12 hero-gradient-bg">
-        <div className="max-w-7xl mx-auto w-full">
-          <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-12 mb-16">
-  {/* Left: Text Content */}
-  <div className="fade-in-element lg:w-1/2" ref={addToObserver}>
-    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
-      We help you turn subscribers into lifelong customers.
-    </h1>
-    <p className="text-xl text-muted-foreground mb-8">
-      Increase your revenue by{' '}
-      <span className="text-green-500 font-semibold">15-30%</span> in
-      60 days through strategic email marketing.
-    </p>
-    <a 
-      href="https://calendly.com/anish-axiemails/30min" 
-      className="button-primary-small hover-float"
-    >
-      Get Your Free Audit
-    </a>
-  </div>
+{/* Hero Section */}
+<section className="min-h-screen flex items-center pt-28 pb-0 px-6 md:px-8 lg:px-12 hero-gradient-bg">
+  <div className="max-w-7xl mx-auto w-full">
+    <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
+      
+      {/* Left: Text Content (Centered) */}
+      <div className="fade-in-element lg:w-1/2 text-center lg:text-center" ref={addToObserver}>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
+          We help you turn subscribers into lifelong customers.
+        </h1>
+        <p className="text-xl text-muted-foreground mb-8">
+          Increase your revenue by{' '}
+          <span className="text-green-500 font-semibold">15-30%</span> in
+          60 days through strategic email marketing.
+        </p>
+        <a 
+          href="https://calendly.com/anish-axiemails/30min" 
+          className="button-primary-small hover-float inline-block"
+          aria-label="Book a free audit via Calendly"
+        >
+          Get Your Free Audit
+        </a>
+      </div>
 
-  {/* Right: Image */}
-  <div className="fade-in-element lg:w-1/2" ref={addToObserver}>
-    <img
-      src="/HeroImage.png"
-      alt="Email Marketing Illustration"
-      className="w-full h-auto max-w-md mx-auto lg:mx-0"
-    />
+      {/* Right: Image (Larger & shifted) */}
+      <div className="fade-in-element lg:w-1/2 flex justify-center lg:justify-end" ref={addToObserver}>
+        <img
+          src="/HeroImage.png"
+          alt="Illustration representing strategic email marketing for revenue growth"
+          className="w-full h-auto max-w-[500px] lg:max-w-[600px]"
+        />
+      </div>
+      
+    </div>
   </div>
-</div>
+</section>
 
-        </div>
-      </section>
 
       {/* Social Proof */}
       <section className="py-8 px-6 md:px-8 lg:px-12 bg-white-50">
