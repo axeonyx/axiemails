@@ -73,6 +73,7 @@ const Index = () => {
               </a>
             </div>
           </div>
+        </div>
       </section>
 
       {/* Social Proof */}
