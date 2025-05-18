@@ -53,12 +53,15 @@ const Index = () => {
       <Header />
 
 {/* Hero Section */}
-<section className="min-h-screen flex items-center pt-28 pb-0 px-6 md:px-8 lg:px-12 hero-gradient-bg">
+<section className="min-h-screen flex items-center pt-36 pb-8 px-6 md:px-8 lg:px-12 hero-gradient-bg">
   <div className="max-w-7xl mx-auto w-full">
     <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
       
-      {/* Left: Text Content (Centered) */}
-      <div className="fade-in-element lg:w-1/2 text-center lg:text-center" ref={addToObserver}>
+      {/* Left: Text Content */}
+      <div 
+        className="fade-in-element lg:w-1/2 flex flex-col justify-center items-center text-center h-full" 
+        ref={addToObserver}
+      >
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
           We help you turn subscribers into lifelong customers.
         </h1>
@@ -69,7 +72,7 @@ const Index = () => {
         </p>
         <a 
           href="https://calendly.com/anish-axiemails/30min" 
-          className="button-primary-small hover-float inline-block"
+          className="button-primary-small hover-float inline-block h-14 leading-[3.5rem]"
           aria-label="Book a free audit via Calendly"
         >
           Get Your Free Audit
@@ -77,38 +80,34 @@ const Index = () => {
       </div>
 
       {/* Right: Hero Image (hidden on mobile) */}
-<div 
-  className="fade-in-element hidden md:flex lg:w-1/2 justify-center lg:justify-end" 
-  ref={addToObserver}
->
-  <img
-    src="/HeroImage.png"
-    alt="Illustration representing strategic email marketing for revenue growth"
-    className="w-full h-auto max-w-[600px] object-contain"
-  />
-</div>
+      <div 
+        className="fade-in-element hidden md:flex lg:w-1/2 justify-center lg:justify-end" 
+        ref={addToObserver}
+      >
+        <img
+          src="/HeroImage.png"
+          alt="Illustration representing strategic email marketing for revenue growth"
+          className="w-full h-auto max-w-[600px] object-contain"
+        />
+      </div>
+    </div>
+
+    {/* Social Proof (Inside Hero) */}
+    <div className="text-center mt-8 space-y-4">
+      <h3 className="text-2xl font-semibold tracking-wider text-primary">
+        Helped Over 8+ Brands to Grow Their Business
+      </h3>
+      <div className="flex flex-wrap justify-center items-center gap-8">
+        <img
+          src="/1.png"
+          alt="Client Logo"
+          className="h-10 md:h-20 w-auto max-w-full object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
+        />
+        {/* Add more logos here if needed */}
+      </div>
     </div>
   </div>
 </section>
-
-
-      {/* Social Proof */}
-      <section className="py-8 px-6 md:px-8 lg:px-12 hero-gradient-bg">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-6 space-y-4">
-            <h3 className="text-2xl font-semibold tracking-wider text-primary">
-            Helped Over 8+ Brands to Grow Their Business
-            </h3>
-            <div className="flex flex-wrap justify-center items-center gap-8">
-              <img
-                src="/1.png"
-                alt="Client Logo"
-                className="h-10 md:h-20 w-auto max-w-full object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Email Showcase Section */}
       <EmailShowcase />
