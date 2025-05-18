@@ -551,7 +551,7 @@ const Index = () => {
       </section>
 
       {/* Results Section */}
-      <section id="results" className="section bg-secondary">
+      <section id="results" className="section bg-white">
         <div className="fade-in-element text-center mb-16" ref={addToObserver}>
           <h2 className="section-title mx-auto">Client Results</h2>
           <p className="section-description mx-auto">
