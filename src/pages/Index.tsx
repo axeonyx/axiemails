@@ -76,15 +76,17 @@ const Index = () => {
         </a>
       </div>
 
-      {/* Right: Image (Larger & shifted) */}
-      <div className="fade-in-element lg:w-1/2 flex justify-center lg:justify-end" ref={addToObserver}>
-        <img
-          src="/HeroImage.png"
-          alt="Illustration representing strategic email marketing for revenue growth"
-          className="w-full h-auto max-w-[500px] lg:max-w-[600px]"
-        />
-      </div>
-      
+      {/* Right: Hero Image (hidden on mobile) */}
+<div 
+  className="fade-in-element hidden md:flex lg:w-1/2 justify-center lg:justify-end" 
+  ref={addToObserver}
+>
+  <img
+    src="/HeroImage.png"
+    alt="Illustration representing strategic email marketing for revenue growth"
+    className="w-full h-auto max-w-[600px] object-contain"
+  />
+</div>
     </div>
   </div>
 </section>
