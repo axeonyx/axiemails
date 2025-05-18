@@ -55,24 +55,35 @@ const Index = () => {
       {/* Hero Section */}
       <section className="min-h-screen flex items-center pt-28 pb-0 px-6 md:px-8 lg:px-12 hero-gradient-bg">
         <div className="max-w-7xl mx-auto w-full">
-          <div className="flex flex-col items-center text-center mb-16">
-            <div className="fade-in-element" ref={addToObserver}>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6 max-w-4xl">
-                We help you turn subscribers into lifelong customers.
-              </h1>
-              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Increase your revenue by{' '}
-                <span className="text-green-500 font-semibold">15-30%</span> in
-                60 days through strategic email marketing.
-              </p>
-              <a 
-                href="https://calendly.com/anish-axiemails/30min" 
-                className="button-primary-small hover-float mx-auto"
-              >
-                Get Your Free Audit
-              </a>
-            </div>
-          </div>
+          <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-12 mb-16">
+  {/* Left: Text Content */}
+  <div className="fade-in-element lg:w-1/2" ref={addToObserver}>
+    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
+      We help you turn subscribers into lifelong customers.
+    </h1>
+    <p className="text-xl text-muted-foreground mb-8">
+      Increase your revenue by{' '}
+      <span className="text-green-500 font-semibold">15-30%</span> in
+      60 days through strategic email marketing.
+    </p>
+    <a 
+      href="https://calendly.com/anish-axiemails/30min" 
+      className="button-primary-small hover-float"
+    >
+      Get Your Free Audit
+    </a>
+  </div>
+
+  {/* Right: Image */}
+  <div className="fade-in-element lg:w-1/2" ref={addToObserver}>
+    <img
+      src="/HeroImage.png"
+      alt="Email Marketing Illustration"
+      className="w-full h-auto max-w-md mx-auto lg:mx-0"
+    />
+  </div>
+</div>
+
         </div>
       </section>
 
