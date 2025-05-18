@@ -53,7 +53,7 @@ const Index = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center pt-28 pb-20 px-6 md:px-8 lg:px-12 hero-gradient-bg">
+      <section className="min-h-screen flex items-center pt-28 pb-0 px-6 md:px-8 lg:px-12 hero-gradient-bg">
         <div className="max-w-7xl mx-auto w-full">
           <div className="flex flex-col items-center text-center mb-16">
             <div className="fade-in-element" ref={addToObserver}>
@@ -77,7 +77,7 @@ const Index = () => {
       </section>
 
       {/* Social Proof */}
-      <section className="py-8 px-6 md:px-8 lg:px-12 bg-gray-50">
+      <section className="py-8 px-6 md:px-8 lg:px-12 bg-white-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 space-y-4">
             <h3 className="text-2xl font-semibold tracking-wider text-primary">
