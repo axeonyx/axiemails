@@ -70,9 +70,9 @@ const Index = () => {
           <span className="text-green-500 font-semibold">15-30%</span> in
           60 days through strategic email marketing.
         </p>
-        <a 
+  <a 
           href="https://calendly.com/anish-axiemails/30min" 
-          className="button-primary-small hover-float inline-block h-14 leading-[3.5rem]"
+          className="button-primary-small hover-float inline-block"
           aria-label="Book a free audit via Calendly"
         >
           Get Your Free Audit
