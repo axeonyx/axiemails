@@ -100,7 +100,7 @@ const Index = () => {
         <img
           src="/1.png"
           alt="Client Logo"
-          className="h-50 md:h-100 w-auto max-w-full object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
+          className="h-30 md:h-60 w-auto max-w-full object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
         />
         {/* Add more logos here if needed */}
       </div>
