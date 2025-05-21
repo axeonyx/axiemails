@@ -98,7 +98,7 @@ const Index = () => {
       </h3>
       <div className="flex flex-wrap justify-center items-center gap-8">
         <img
-          src="/1.png"
+          src="/logos.png"
           alt="Client Logo"
           className="h-30 md:h-60 w-auto max-w-full object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
         />
