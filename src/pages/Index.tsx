@@ -94,7 +94,7 @@ const Index = () => {
     {/* Social Proof (Inside Hero) */}
     <div className="text-center mt-8 space-y-4">
       <h3 className="text-2xl font-semibold tracking-wider text-primary">
-        Helped Over 8+ Brands to Grow Their Business
+        Helped 75+ brands grow their business and generated over $30M in revenue and counting
       </h3>
       <div className="flex flex-wrap justify-center items-center gap-8">
         <img
