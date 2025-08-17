@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
 const Header = () => {
@@ -19,14 +20,14 @@ const Header = () => {
 
   return <header className={cn('fixed top-0 left-0 right-0 z-50 py-5 px-6 md:px-8 lg:px-12 transition-all duration-300', scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-5')}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <a href="#" className="text-xl md:text-2xl font-bold tracking-tight transition-all hover:opacity-80">AxieMails</a>
+        <Link to="/" className="text-xl md:text-2xl font-bold tracking-tight transition-all hover:opacity-80">AxieMails</Link>
         
         <nav className="hidden md:flex items-center space-x-8">
         <a href="#email-designs" className="nav-link">Our Designs</a>
           <a href="#services" className="nav-link">Services</a>
           <a href="#why-us" className="nav-link">Why Us</a>
           <a href="#results" className="nav-link">Results</a>
-          <a href="/casestudies" className="nav-link">Case Studies</a>
+          <Link to="/casestudies" className="nav-link">Case Studies</Link>
           <a href="https://calendly.com/anish-axiemails/30min" className="button-primary-small">
             Get a Free Audit
           </a>
@@ -48,7 +49,7 @@ const Header = () => {
           <a href="#email-designs" className="block py-2 nav-link">Our Designs</a>
           <a href="#why-us" className="block py-2 nav-link">Why Us</a>
           <a href="#results" className="block py-2 nav-link">Results</a>
-          <a href="/casestudies" className="block py-2 nav-link">Case Studies</a>
+          <Link to="/casestudies" className="block py-2 nav-link">Case Studies</Link>
         </div>
       </div>
     </header>;
