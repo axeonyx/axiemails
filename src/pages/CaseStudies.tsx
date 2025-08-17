@@ -56,6 +56,30 @@ const CaseStudies = () => {
               </ul>
             </p>
 
+            {/* Image showcasing results */}
+            <div className="mb-8">
+              <img 
+                src="/path-to-your-image/results-chart.png" 
+                alt="Results chart showing revenue growth from emails"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+
+            {/* Explanation about the 150k revenue */}
+            <h3 className="text-xl font-semibold mb-4">How We Helped Generate Over 150k from Emails</h3>
+            <p className="mb-6">
+              By implementing a retention-first email strategy, we helped Oceanus drive more than €150,000 in revenue from emails alone. Through precise segmentation, highly targeted flows, and strategic campaign scheduling, we maximized customer lifetime value (LTV) and encouraged repeat purchases — turning email marketing into a powerful revenue driver.
+            </p>
+
+            {/* Image showcasing email campaigns */}
+            <div className="mb-8">
+              <img 
+                src="/path-to-your-image/email-campaign-screenshot.png" 
+                alt="Screenshot of email campaign"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+
             <h3 className="text-xl font-semibold mb-4">Why This Worked</h3>
             <p>
               The success wasn't due to more emails or new technology. It was due to a retention system built on customer behavior, focused on repeat purchases and maximizing customer lifetime value (LTV).
