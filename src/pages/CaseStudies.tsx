@@ -59,7 +59,7 @@ const CaseStudies = () => {
             {/* Image showcasing results */}
             <div className="mb-8">
               <img 
-                src="axeonyx/axiemails/public/casestudyresults1.png" 
+                src="/casestudyresults1.png" 
                 alt="Results chart showing revenue growth from emails"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -74,7 +74,7 @@ const CaseStudies = () => {
             {/* Image showcasing email campaigns */}
             <div className="mb-8">
               <img 
-                src="axeonyx/axiemails/public/casestudyresults2.png" 
+                src="/casestudyresults2.png" 
                 alt="Screenshot of email campaign"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
