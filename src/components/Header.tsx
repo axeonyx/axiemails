@@ -1,3 +1,4 @@
+// src/components/Header.tsx
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
@@ -7,18 +8,17 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Function to handle scroll behavior without reloading the page
+  // Function to handle section clicks (only scroll to section within the same page)
   const handleSectionClick = (sectionId: string) => {
-    // Check if we're on the homepage
     if (location.pathname === '/') {
-      // Scroll to the section on the same page (SPA behavior)
+      // Only scroll to section if on the homepage
       const element = document.querySelector(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      // Navigate to the homepage with hash to scroll to the section
-      window.location.href = `/#${sectionId}`;
+      // Use Link for navigation, React Router will handle scroll behavior
+      window.history.pushState({}, '', `/#${sectionId}`);
     }
   };
 
@@ -43,7 +43,7 @@ const Header = () => {
           <button onClick={() => handleSectionClick('#services')} className="nav-link">Services</button>
           <button onClick={() => handleSectionClick('#why-us')} className="nav-link">Why Us</button>
           <button onClick={() => handleSectionClick('#results')} className="nav-link">Results</button>
-          <Link to="/casestudies" className="nav-link">Case Studies</Link>
+          <Link to="/casestudies" className="nav-link">Case Studies</Link> {/* Use Link here */}
           <a href="https://calendly.com/anish-axiemails/30min" className="button-primary-small">
             Get a Free Audit
           </a>
