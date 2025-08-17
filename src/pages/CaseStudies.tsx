@@ -24,6 +24,9 @@ const CaseStudies = () => {
         {/* Case Study Content */}
         <section className="py-16 px-6 md:px-8 lg:px-12">
           <div className="max-w-4xl mx-auto text-left">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">
+              Introduction
+            </h2>
             <p className="text-lg mb-6">
               Oceanus The Label is a luxury swimwear and resort-wear brand that turned its email program around to drive significant revenue growth. Here's how they did it:
             </p>
@@ -56,14 +59,14 @@ const CaseStudies = () => {
             {/* Image showcasing results */}
             <div className="mb-8">
               <img 
-                src="/path-to-your-image/results-chart.png" 
+                src="axeonyx/axiemails/public/casestudyresults1.png" 
                 alt="Results chart showing revenue growth from emails"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
 
             {/* Explanation about the 150k revenue */}
-            <h3 className="text-xl font-semibold mb-4">How We Helped Generate Over <span className="text-yellow-500">$150,000</span> from Emails</h3>
+            <h3 className="text-xl font-semibold mb-4">How We Helped Generate Over <span className="text-green-500">$150,000</span> from Emails</h3>
             <p className="mb-6">
               By implementing a retention-first email strategy, we helped Oceanus drive more than <span className="font-bold">$150,000</span> in revenue from emails alone. Through precise segmentation, highly targeted flows, and strategic campaign scheduling, we maximized customer lifetime value (LTV) and encouraged repeat purchases — turning email marketing into a powerful revenue driver.
             </p>
@@ -71,7 +74,7 @@ const CaseStudies = () => {
             {/* Image showcasing email campaigns */}
             <div className="mb-8">
               <img 
-                src="/path-to-your-image/email-campaign-screenshot.png" 
+                src="axeonyx/axiemails/public/casestudyresults2.png" 
                 alt="Screenshot of email campaign"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
