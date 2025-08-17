@@ -84,7 +84,7 @@ const Index = () => {
           <span className="text-green-500 font-semibold">15-30%</span> in
           60 days through strategic email marketing.
         </p>
-  <a 
+        <a 
           href="https://calendly.com/anish-axiemails/30min" 
           className="button-primary-small hover-float inline-block"
           aria-label="Book a free audit via Calendly"
@@ -94,15 +94,15 @@ const Index = () => {
       </div>
 
       <div 
-  className="flex justify-center lg:justify-end w-full lg:w-1/2" 
-  ref={addToObserver}
->
-  <img
-    src="/HeroImage.png"
-    alt="Illustration representing strategic email marketing for revenue growth"
-    className="w-full h-auto max-w-[600px] object-contain"
-  />
-</div>
+        className="flex justify-center lg:justify-end w-full lg:w-1/2" 
+        ref={addToObserver}
+      >
+        <img
+          src="/HeroImage.png"
+          alt="Illustration representing strategic email marketing for revenue growth"
+          className="w-full h-auto max-w-[600px] object-contain"
+        />
+      </div>
     </div>
 
     {/* Social Proof (Inside Hero) */}
@@ -118,6 +118,21 @@ const Index = () => {
         />
         {/* Add more logos here if needed */}
       </div>
+    </div>
+
+    {/* New Case Study Section */}
+    <div className="text-center mt-16 mb-16">
+      <h3 className="text-3xl font-semibold mb-6">See Our Case Studies</h3>
+      <p className="text-lg text-muted-foreground mb-8">
+        Curious about how we help businesses like yours grow? Check out our case studies to see the results we’ve delivered.
+      </p>
+      <a 
+        href="https://axiemails.com/casestudies" 
+        className="button-primary-small hover-float inline-block"
+        aria-label="View our Case Studies"
+      >
+        View Case Studies
+      </a>
     </div>
   </div>
 </section>
