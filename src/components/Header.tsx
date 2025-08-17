@@ -8,24 +8,29 @@ const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Function to handle section clicks (scroll to section or navigate with hash)
+  // Handle section clicks
   const handleSectionClick = (sectionId: string) => {
     if (location.pathname === '/') {
-      // If on homepage, scroll to section
+      // Scroll to the section on the same page
       const element = document.querySelector(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      // If not on homepage, navigate to the homepage and scroll to the section
+      // Navigate to the homepage and scroll to the section
       navigate(`/#${sectionId}`);
       setTimeout(() => {
         const element = document.querySelector(sectionId);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 100); // Delay to ensure the navigation has occurred before scrolling
+      }, 100);
     }
+  };
+
+  // Handle scrolling to the top when the AxieMails logo is clicked
+  const handleLogoClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   useEffect(() => {
@@ -42,15 +47,20 @@ const Header = () => {
   return (
     <header className={cn('fixed top-0 left-0 right-0 z-50 py-5 px-6 md:px-8 lg:px-12 transition-all duration-300', scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-5')}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link to="/" className="text-xl md:text-2xl font-bold tracking-tight transition-all hover:opacity-80">AxieMails</Link>
+        {/* Handle click on logo to scroll to the top */}
+        <div 
+          className="text-xl md:text-2xl font-bold tracking-tight transition-all hover:opacity-80 cursor-pointer"
+          onClick={handleLogoClick}
+        >
+          AxieMails
+        </div>
 
         <nav className="hidden md:flex items-center space-x-8">
-          {/* Buttons with section navigation */}
           <button onClick={() => handleSectionClick('#email-designs')} className="nav-link">Our Designs</button>
           <button onClick={() => handleSectionClick('#services')} className="nav-link">Services</button>
           <button onClick={() => handleSectionClick('#why-us')} className="nav-link">Why Us</button>
           <button onClick={() => handleSectionClick('#results')} className="nav-link">Results</button>
-          <Link to="/casestudies" className="nav-link">Case Studies</Link> {/* Case Studies link */}
+          <Link to="/casestudies" className="nav-link">Case Studies</Link>
           <a href="https://calendly.com/anish-axiemails/30min" className="button-primary-small">Get a Free Audit</a>
         </nav>
 
@@ -66,7 +76,6 @@ const Header = () => {
       {/* Mobile menu */}
       <div className={`md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300 overflow-hidden ${mobileMenuOpen ? 'max-h-64' : 'max-h-0'}`}>
         <div className="px-6 py-4 space-y-4">
-          {/* Handle section clicks for mobile */}
           <button onClick={() => { handleSectionClick('#services'); setMobileMenuOpen(false); }} className="block py-2 nav-link text-left">Services</button>
           <button onClick={() => { handleSectionClick('#email-designs'); setMobileMenuOpen(false); }} className="block py-2 nav-link text-left">Our Designs</button>
           <button onClick={() => { handleSectionClick('#why-us'); setMobileMenuOpen(false); }} className="block py-2 nav-link text-left">Why Us</button>
