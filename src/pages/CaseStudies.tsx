@@ -13,7 +13,7 @@ const CaseStudies = () => {
         <section className="py-16 px-6 md:px-8 lg:px-12">
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-              How Oceanus Generated Over <span className="text-yellow-500">$150,000</span> from Emails Using Retention-First Strategy
+              How Oceanus Generated Over <span className="text-green-500">$150,000</span> from Emails Using Retention-First Strategy
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               Discover how we helped Oceanus turn their email marketing into a major revenue driver, generating over $150,000 in revenue.
@@ -24,9 +24,6 @@ const CaseStudies = () => {
         {/* Case Study Content */}
         <section className="py-16 px-6 md:px-8 lg:px-12">
           <div className="max-w-4xl mx-auto text-left">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6">
-              How Oceanus Generated Over <span className="text-yellow-500">$150,000</span> from Emails Using Retention-First Strategy
-            </h2>
             <p className="text-lg mb-6">
               Oceanus The Label is a luxury swimwear and resort-wear brand that turned its email program around to drive significant revenue growth. Here's how they did it:
             </p>
