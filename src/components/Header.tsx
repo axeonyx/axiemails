@@ -1,23 +1,30 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   // Function to handle section clicks (scroll to section or navigate with hash)
   const handleSectionClick = (sectionId: string) => {
     if (location.pathname === '/') {
-      // On the homepage, just scroll to the section
+      // If on homepage, scroll to section
       const element = document.querySelector(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      // On other pages, navigate to the homepage and scroll to the section
-      window.location.href = `/#${sectionId}`;
+      // If not on homepage, navigate to the homepage and scroll to the section
+      navigate(`/#${sectionId}`);
+      setTimeout(() => {
+        const element = document.querySelector(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100); // Delay to ensure the navigation has occurred before scrolling
     }
   };
 
