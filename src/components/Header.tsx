@@ -23,10 +23,10 @@ const Header = () => {
         <Link to="/" className="text-xl md:text-2xl font-bold tracking-tight transition-all hover:opacity-80">AxieMails</Link>
         
         <nav className="hidden md:flex items-center space-x-8">
-        <a href="#email-designs" className="nav-link">Our Designs</a>
-          <a href="#services" className="nav-link">Services</a>
-          <a href="#why-us" className="nav-link">Why Us</a>
-          <a href="#results" className="nav-link">Results</a>
+        <Link to="/#email-designs" className="nav-link">Our Designs</Link>
+          <Link to="/#services" className="nav-link">Services</Link>
+          <Link to="/#why-us" className="nav-link">Why Us</Link>
+          <Link to="/#results" className="nav-link">Results</Link>
           <Link to="/casestudies" className="nav-link">Case Studies</Link>
           <a href="https://calendly.com/anish-axiemails/30min" className="button-primary-small">
             Get a Free Audit
@@ -45,10 +45,10 @@ const Header = () => {
       {/* Mobile menu */}
       <div className={`md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300 overflow-hidden ${mobileMenuOpen ? 'max-h-64' : 'max-h-0'}`}>
         <div className="px-6 py-4 space-y-4">
-          <a href="#services" className="block py-2 nav-link">Services</a>
-          <a href="#email-designs" className="block py-2 nav-link">Our Designs</a>
-          <a href="#why-us" className="block py-2 nav-link">Why Us</a>
-          <a href="#results" className="block py-2 nav-link">Results</a>
+          <Link to="/#services" className="block py-2 nav-link">Services</Link>
+          <Link to="/#email-designs" className="block py-2 nav-link">Our Designs</Link>
+          <Link to="/#why-us" className="block py-2 nav-link">Why Us</Link>
+          <Link to="/#results" className="block py-2 nav-link">Results</Link>
           <Link to="/casestudies" className="block py-2 nav-link">Case Studies</Link>
         </div>
       </div>

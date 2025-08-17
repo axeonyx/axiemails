@@ -40,6 +40,20 @@ const Index = () => {
     };
   }, []);
 
+  // Handle hash navigation from other pages
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      // Wait for the page to render then scroll to the section
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, []);
+
   // Add elements to be observed
   const addToObserver = (el: HTMLElement | null) => {
     if (el) observerRefs.current.push(el);
