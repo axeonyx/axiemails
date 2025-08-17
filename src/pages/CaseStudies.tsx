@@ -68,7 +68,7 @@ const CaseStudies = () => {
             {/* Explanation about the 150k revenue */}
             <h3 className="text-xl font-semibold mb-4">How We Helped Generate Over <span className="text-green-500">$150,000</span> from Emails</h3>
             <p className="mb-6">
-              By implementing a retention-first email strategy, we helped Oceanus drive more than <span className="font-bold">$150,000</span> in revenue from emails alone. Through precise segmentation, highly targeted flows, and strategic campaign scheduling, we maximized customer lifetime value (LTV) and encouraged repeat purchases — turning email marketing into a powerful revenue driver.
+              By implementing a retention-first email strategy, we helped Oceanus drive more than <span className="font-bold">$150,000</span> in revenue from emails alone. Through precise segmentation, highly targeted flows, and strategic campaign scheduling, we maximized customer lifetime value (LTV) and encouraged repeat purchases turning email marketing into a powerful revenue driver. Now we consistently generate over 30% of monthly revenue from emails.
             </p>
 
             {/* Image showcasing email campaigns */}
