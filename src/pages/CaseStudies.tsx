@@ -51,8 +51,8 @@ const CaseStudies = () => {
               After 45 days of executing the new strategy, Oceanus saw a significant improvement:
               <ul className="list-disc ml-6">
                 <li>Email revenue contribution increased to <span className="font-bold">$150,000+</span>.</li>
-                <li>Return customer rate increased by <span className="font-bold">111%</span>, from 9% to <span className="font-bold">19.72%</span>.</li>
-                <li>AOV (Average Order Value) increased by <span className="font-bold">19%</span> to €352.</li>
+                <li>Return customer rate increased by <span className="font-bold text-green-500">111%</span>, from <span className="font-bold">9%</span>, to <span className="font-bold">19.72%</span>.</li>
+                <li>AOV (Average Order Value) increased by <span className="font-bold">19%</span> to <span className="font-bold">€352.</span></li>
               </ul>
             </p>
 
