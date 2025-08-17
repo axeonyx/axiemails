@@ -12,7 +12,7 @@ const CaseStudies = () => {
         {/* Hero Section */}
         <section className="py-16 px-6 md:px-8 lg:px-12">
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent truncate">
               How Oceanus Generated Over <span className="text-green-500">$150,000</span> from Emails Using Retention-First Strategy
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -68,7 +68,7 @@ const CaseStudies = () => {
             {/* Explanation about the 150k revenue */}
             <h3 className="text-xl font-semibold mb-4">How We Helped Generate Over <span className="text-green-500">$150,000</span> from Emails</h3>
             <p className="mb-6">
-              By implementing a retention-first email strategy, we helped Oceanus drive more than <span className="font-bold">$150,000</span> in revenue from emails alone. Through precise segmentation, highly targeted flows, and strategic campaign scheduling, we maximized customer lifetime value (LTV) and encouraged repeat purchases turning email marketing into a powerful revenue driver. Now we consistently generate over 30% of monthly revenue from emails.
+              By implementing a retention-first email strategy, we helped Oceanus drive more than <span className="font-bold">$150,000</span> in revenue from emails alone. Through precise segmentation, highly targeted flows, and strategic campaign scheduling, we maximized customer lifetime value (LTV) and encouraged repeat purchases turning email marketing into a powerful revenue driver. Fast forward to today, We consistently generate over 30% of monthly revenue from emails.
             </p>
 
             {/* Image showcasing email campaigns */}
