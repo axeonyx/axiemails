@@ -1,11 +1,25 @@
 
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const handleSectionClick = (sectionId: string) => {
+    if (location.pathname === '/') {
+      // Already on homepage, just scroll to section
+      const element = document.querySelector(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Navigate to homepage with hash
+      window.location.href = `/${sectionId}`;
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,10 +37,10 @@ const Header = () => {
         <Link to="/" className="text-xl md:text-2xl font-bold tracking-tight transition-all hover:opacity-80">AxieMails</Link>
         
         <nav className="hidden md:flex items-center space-x-8">
-        <Link to="/#email-designs" className="nav-link">Our Designs</Link>
-          <Link to="/#services" className="nav-link">Services</Link>
-          <Link to="/#why-us" className="nav-link">Why Us</Link>
-          <Link to="/#results" className="nav-link">Results</Link>
+          <button onClick={() => handleSectionClick('#email-designs')} className="nav-link">Our Designs</button>
+          <button onClick={() => handleSectionClick('#services')} className="nav-link">Services</button>
+          <button onClick={() => handleSectionClick('#why-us')} className="nav-link">Why Us</button>
+          <button onClick={() => handleSectionClick('#results')} className="nav-link">Results</button>
           <Link to="/casestudies" className="nav-link">Case Studies</Link>
           <a href="https://calendly.com/anish-axiemails/30min" className="button-primary-small">
             Get a Free Audit
@@ -45,10 +59,10 @@ const Header = () => {
       {/* Mobile menu */}
       <div className={`md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300 overflow-hidden ${mobileMenuOpen ? 'max-h-64' : 'max-h-0'}`}>
         <div className="px-6 py-4 space-y-4">
-          <Link to="/#services" className="block py-2 nav-link">Services</Link>
-          <Link to="/#email-designs" className="block py-2 nav-link">Our Designs</Link>
-          <Link to="/#why-us" className="block py-2 nav-link">Why Us</Link>
-          <Link to="/#results" className="block py-2 nav-link">Results</Link>
+          <button onClick={() => { handleSectionClick('#services'); setMobileMenuOpen(false); }} className="block py-2 nav-link text-left">Services</button>
+          <button onClick={() => { handleSectionClick('#email-designs'); setMobileMenuOpen(false); }} className="block py-2 nav-link text-left">Our Designs</button>
+          <button onClick={() => { handleSectionClick('#why-us'); setMobileMenuOpen(false); }} className="block py-2 nav-link text-left">Why Us</button>
+          <button onClick={() => { handleSectionClick('#results'); setMobileMenuOpen(false); }} className="block py-2 nav-link text-left">Results</button>
           <Link to="/casestudies" className="block py-2 nav-link">Case Studies</Link>
         </div>
       </div>
