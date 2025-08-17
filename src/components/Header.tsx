@@ -80,7 +80,7 @@ const Header = () => {
       </div>
 
       {/* Mobile menu */}
-      <div className={`md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300 overflow-hidden ${mobileMenuOpen ? 'max-h-64' : 'max-h-0'}`}>
+      <div className={`md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300 ${mobileMenuOpen ? 'max-h-96' : 'max-h-0'} overflow-hidden ${mobileMenuOpen ? 'overflow-y-auto' : ''}`}>
         <div className="px-6 py-4 space-y-4">
           {/* Handle section clicks for mobile */}
           <button onClick={() => { handleSectionClick('#services'); setMobileMenuOpen(false); }} className="block py-2 nav-link text-left">Services</button>
