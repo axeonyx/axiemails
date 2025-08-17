@@ -6,18 +6,18 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
+  const navigate = useNavigate();  // useNavigate hook to programmatically navigate
 
-  // Handle section clicks
+  // Function to handle section clicks (scroll to section or navigate with hash)
   const handleSectionClick = (sectionId: string) => {
     if (location.pathname === '/') {
-      // Scroll to the section on the same page
+      // If on homepage, scroll to section
       const element = document.querySelector(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      // Navigate to the homepage and scroll to the section
+      // If not on homepage, navigate to homepage and scroll to the section
       navigate(`/#${sectionId}`);
       setTimeout(() => {
         const element = document.querySelector(sectionId);
@@ -30,7 +30,12 @@ const Header = () => {
 
   // Handle scrolling to the top when the AxieMails logo is clicked
   const handleLogoClick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Navigate to homepage first
+    navigate('/');
+    // Scroll to the top once the route has changed
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);  // Delay to ensure navigation has occurred
   };
 
   useEffect(() => {
@@ -50,17 +55,18 @@ const Header = () => {
         {/* Handle click on logo to scroll to the top */}
         <div 
           className="text-xl md:text-2xl font-bold tracking-tight transition-all hover:opacity-80 cursor-pointer"
-          onClick={handleLogoClick}
+          onClick={handleLogoClick} // Call handleLogoClick to navigate to homepage and scroll
         >
           AxieMails
         </div>
 
         <nav className="hidden md:flex items-center space-x-8">
+          {/* Buttons with section navigation */}
           <button onClick={() => handleSectionClick('#email-designs')} className="nav-link">Our Designs</button>
           <button onClick={() => handleSectionClick('#services')} className="nav-link">Services</button>
           <button onClick={() => handleSectionClick('#why-us')} className="nav-link">Why Us</button>
           <button onClick={() => handleSectionClick('#results')} className="nav-link">Results</button>
-          <Link to="/casestudies" className="nav-link">Case Studies</Link>
+          <Link to="/casestudies" className="nav-link">Case Studies</Link> {/* Case Studies link */}
           <a href="https://calendly.com/anish-axiemails/30min" className="button-primary-small">Get a Free Audit</a>
         </nav>
 
@@ -76,6 +82,7 @@ const Header = () => {
       {/* Mobile menu */}
       <div className={`md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300 overflow-hidden ${mobileMenuOpen ? 'max-h-64' : 'max-h-0'}`}>
         <div className="px-6 py-4 space-y-4">
+          {/* Handle section clicks for mobile */}
           <button onClick={() => { handleSectionClick('#services'); setMobileMenuOpen(false); }} className="block py-2 nav-link text-left">Services</button>
           <button onClick={() => { handleSectionClick('#email-designs'); setMobileMenuOpen(false); }} className="block py-2 nav-link text-left">Our Designs</button>
           <button onClick={() => { handleSectionClick('#why-us'); setMobileMenuOpen(false); }} className="block py-2 nav-link text-left">Why Us</button>
