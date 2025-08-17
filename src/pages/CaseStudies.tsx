@@ -12,7 +12,7 @@ const CaseStudies = () => {
         {/* Hero Section */}
         <section className="py-16 px-6 md:px-8 lg:px-12">
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent truncate">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
               How Oceanus Generated Over <span className="text-green-500">$150,000</span> from Emails Using Retention-First Strategy
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
