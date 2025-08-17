@@ -16,54 +16,50 @@ const CaseStudies = () => {
               Case Studies
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Discover how we've helped brands transform their email marketing and drive exceptional results
+              Discover how we've helped brands transform their email marketing and drive exceptional results.
             </p>
           </div>
         </section>
 
-        {/* Coming Soon Section */}
-        <section className="py-16 px-6 md:px-8 lg:px-12 bg-muted/30">
-          <div className="max-w-4xl mx-auto text-center">
+        {/* Case Study Content */}
+        <section className="py-16 px-6 md:px-8 lg:px-12">
+          <div className="max-w-4xl mx-auto text-left">
             <h2 className="text-2xl md:text-3xl font-bold mb-6">
-              Detailed Case Studies Coming Soon
+              How Oceanus Generated 30% Of Revenue From Emails Using Retention-First Strategy
             </h2>
-            <p className="text-muted-foreground mb-8">
-              We're currently preparing comprehensive case studies showcasing our client successes. 
-              Check back soon to see how we've helped businesses like yours achieve remarkable growth.
+            <p className="text-lg mb-6">
+              Oceanus The Label is a luxury swimwear and resort-wear brand that turned its email program around to drive significant revenue growth. Here's how they did it:
             </p>
-            <div className="bg-white/50 backdrop-blur-sm border border-border/50 rounded-lg p-8">
-              <h3 className="text-xl font-semibold mb-4">What You'll Find Here Soon:</h3>
-              <div className="grid md:grid-cols-2 gap-4 text-left">
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>Detailed performance metrics</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>Before & after comparisons</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>Strategy breakdowns</span>
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>ROI achievements</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>Client testimonials</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>Implementation timelines</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
+            <h3 className="text-xl font-semibold mb-4">The Challenge</h3>
+            <p className="mb-6">
+              Despite having flows and campaigns in place, the results were not in line with Oceanus's potential. Their email program had low engagement and was contributing less than 10% of their total revenue.
+            </p>
+            
+            <h3 className="text-xl font-semibold mb-4">The Strategy</h3>
+            <p className="mb-6">
+              We didn't start from scratch but audited and rebuilt the existing email setup focusing on three main pillars:
+              <ul className="list-disc ml-6 mb-6">
+                <li><strong>Smart Segmentation</strong>: Rebuilt the list into live segments based on real behavior.</li>
+                <li><strong>Flow Infrastructure That Actually Converts</strong>: Mapped out the entire customer journey with a focus on personalized branching.</li>
+                <li><strong>Campaign Rhythm + Retention Intent</strong>: Transitioned from generic email drops to a retention-first campaign calendar.</li>
+              </ul>
+            </p>
+
+            <h3 className="text-xl font-semibold mb-4">The Results</h3>
+            <p className="mb-6">
+              After 45 days of executing the new strategy, Oceanus saw a significant improvement:
+              <ul className="list-disc ml-6">
+                <li>Email revenue contribution increased to 30% of total revenue.</li>
+                <li>Return customer rate increased by 111%, from 9% to 19.72%.</li>
+                <li>AOV (Average Order Value) increased by 19% to €352.</li>
+              </ul>
+            </p>
+
+            <h3 className="text-xl font-semibold mb-4">Why This Worked</h3>
+            <p>
+              The success wasn't due to more emails or new technology. It was due to a retention system built on customer behavior, focused on repeat purchases and maximizing customer lifetime value (LTV).
+            </p>
           </div>
         </section>
 
